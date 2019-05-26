@@ -14,7 +14,7 @@ public static Boolean valueOf(boolean b) {
 
 Providing a static factory method instead of a public constructor has both advantages and disadvantages.
 
-Advantages
+#### Advantages
 
 * One advantage of static factory methods is that, unlike constructors, they have names.
 * A second advantage of static factory methods is that, unlike constructors, they are not required to create a new object each time they’re invoked.
@@ -23,12 +23,12 @@ This gives you great flexibility in choosing the class of the returned object.
 * A fourth advantage of static factories is that the class of the returned object can vary from call to call as a function of the input parameters. Any sub- type of the declared return type is permissible. The class of the returned object can also vary from release to release.
 *A fifth advantage of static factories is that the class of the returned object need not exist when the class containing the method is written. Such flexible static factory methods form the basis of service provider frameworks, like the Java Database Connectivity API (JDBC). A service provider framework is a system in which providers implement a service, and the system makes the implementations available to clients, decoupling the clients from the implementations.
 
-Disadvantages
+#### Disadvantages
 
 * The main limitation of providing only static factory methods is that classes without public or protected constructors cannot be subclassed.
 * A second shortcoming of static factory methods is that they are hard for programmers to find.
 
-The Javadoc tool may someday draw attention to static factory methods. In the meantime, you can reduce this problem by drawing attention to static factories in class or interface documentation and by adhering to common naming conventions.
+### The Javadoc tool may someday draw attention to static factory methods. In the meantime, you can reduce this problem by drawing attention to static factories in class or interface documentation and by adhering to common naming conventions.
 
 * from—A type-conversion method that takes a single parameter and returns a corresponding instance of this type, for example:
      Date d = Date.from(instant);
