@@ -1,7 +1,7 @@
 # Item 1 to 5 Summary
 
 
-# Item 1: Consider static factory methods instead of constructors
+## Item 1: Consider static factory methods instead of constructors
 
 #### A class can provide a public static factory method, which is simply a static method that returns an instance of the class. Here’s a simple example from Boolean (the boxed primitive class for boolean). This method translates a boolean primitive value into a Boolean object reference:
 
@@ -11,3 +11,8 @@ public static Boolean valueOf(boolean b) {
        return b ? Boolean.TRUE : Boolean.FALSE;
 }
 ```
+
+Providing a static factory method instead of a public constructor has both advantages and disadvantages.
+
+* One advantage of static factory methods is that, unlike constructors, they have names.
+* 
