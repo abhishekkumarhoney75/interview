@@ -46,6 +46,8 @@ class. Type is the type of object returned by the factory method, for example: F
 * **type**—A concise alternative to getType and newType, for example:
      List<Complaint> litany = Collections.list(legacyLitany);
 
+*******************
+
 ## Item 2: Consider a builder when faced with many constructor parameters.
 
 ### Static factories and constructors share a limitation: they do not scale well to large numbers of optional parameters.
@@ -242,6 +244,7 @@ This client code is easy to write and, more importantly, to read. The Builder pa
 
 #### In summary, the Builder pattern is a good choice when designing classes whose constructors or static factories would have more than a handful of parameters, especially if most of those parameters are optional. Client code is much easier to read and write with builders than with the traditional telescoping constructor pattern, and builders are much safer than JavaBeans.
 
+Geeks for geeks link: https://www.geeksforgeeks.org/builder-pattern-in-java/
 
 
 
