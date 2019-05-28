@@ -121,6 +121,8 @@ JavaBeans pattern pre- cludes the possibility of making a class immutable (Item 
 ### Builder Pattern
 
 ``` java
+// Geeks for geeks
+
 // Java code to demonstrate Builder Pattern 
   
 // Server Side Code 
@@ -244,7 +246,13 @@ This client code is easy to write and, more importantly, to read. The Builder pa
 
 #### In summary, the Builder pattern is a good choice when designing classes whose constructors or static factories would have more than a handful of parameters, especially if most of those parameters are optional. Client code is much easier to read and write with builders than with the traditional telescoping constructor pattern, and builders are much safer than JavaBeans.
 
-Geeks for geeks link: https://www.geeksforgeeks.org/builder-pattern-in-java/
+Links:
+* https://www.geeksforgeeks.org/builder-pattern-in-java/
+* https://howtodoinjava.com/design-patterns/creational/builder-pattern-in-java/
+* https://www.journaldev.com/1425/builder-design-pattern-in-java
+* https://dzone.com/articles/design-patterns-the-builder-pattern
+* https://www.tutorialspoint.com/design_pattern/builder_pattern.htm
+* https://www.javaworld.com/article/2074938/too-many-parameters-in-java-methods-part-3-builder-pattern.html
 
 
 
